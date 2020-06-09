@@ -7,6 +7,10 @@ export const Wrapper = styled.main`
     flex-direction: column;
     height: 100vh;
     width: 100%;
+
+    ${media.lessThan("medium")`
+        height: 100%;
+    `}
 `
 
 export const Header = styled.header`
