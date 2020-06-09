@@ -1,36 +1,31 @@
 import styled from 'styled-components'
 
-export const Wrapper = styled.section`
-    height: calc(100vh - 70px);
-    background: #fff;
-    padding: 1.5em 6em;
-    display: grid; 
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-        "copy image";
-`
-
 export const CopyHero = styled.article`
     align-items: flex-start;
-    grid-area: copy;
     display: flex;
-    font-size: 3.5em;
     flex-direction: column;
-    font-weight: 700;
+    grid-area: copy;
     justify-content: center;
-    line-height: 125%;
+    padding: 0 4em;
+
+    h1 {
+        color: #2a2a2a;
+        font-size: 3.2em;
+        font-weight: 700;
+        margin: 1.5em 0 .8em;
+        line-height: 125%;
+    }
+
+    p {
+        color: #7f8f9f;
+        font-weight: 300;
+        line-height: 1.5em;
+        margin-bottom: 3em;
+        width: 75%;
+    }
 `
 
 export const ImageHero = styled.article`
-    grid-area: image;
-`
-
-export const ActionButton = styled.button`
-    padding: 1em 2em;
-    background: #278a65;
-    border: none;
-    color: #fff;
-    font-size: 15px;
-    border-radius: 3px;
-    margin-top: 3em;
+    grid-area: bg;
+    opacity: .5;
 `

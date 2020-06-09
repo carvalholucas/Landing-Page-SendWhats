@@ -8,6 +8,17 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
     {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Poppins`,
+            variants: [`200`, `300`, `500`, `700`]
+          },
+        ],
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
@@ -18,7 +29,7 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [],
-      }, 
+      },
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,

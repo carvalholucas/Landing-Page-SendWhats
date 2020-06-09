@@ -5,6 +5,8 @@
   "version": "0.1.0",
   "author": "Lucas Carvalho <carvalho.lucassm@gmail.com>",
   "dependencies": {
+    "@unform/core": "^2.1.0",
+    "@unform/web": "^2.1.0",
     "axios": "^0.19.2",
     "babel-plugin-styled-components": "^1.10.7",
     "gatsby": "^2.20.12",
@@ -12,6 +14,7 @@
     "gatsby-plugin-import": "^2.1.5",
     "gatsby-plugin-manifest": "^2.3.3",
     "gatsby-plugin-offline": "^3.1.2",
+    "gatsby-plugin-prefetch-google-fonts": "^1.4.3",
     "gatsby-plugin-react-helmet": "^3.2.2",
     "gatsby-plugin-sharp": "^2.5.3",
     "gatsby-plugin-styled-components": "^3.2.3",
@@ -23,6 +26,7 @@
     "react-dom": "^16.12.0",
     "react-helmet": "^6.0.0",
     "styled-components": "^5.1.0",
+    "styled-icons": "^10.2.1",
     "styled-media-query": "^2.1.2"
   },
   "devDependencies": {

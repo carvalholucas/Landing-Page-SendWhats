@@ -1,17 +1,23 @@
 import React from 'react'
 
 import * as S from './styles'
+import * as L from '../Layout/styles'
+
+import Logo from '../../images/logo.png'
 
 const Header = () => (
-    <S.Header>
-        <S.LogoWrapper>SendWhats</S.LogoWrapper>
+    <L.Header>
+        <S.LogoWrapper src={Logo} alt="SendWhats"/>
         <nav>
             <S.Menu>
                 <S.MenuItem>Como funciona?</S.MenuItem>
                 <S.MenuItem>Benefícios</S.MenuItem>
+                <S.MenuItem>Fale Conosco</S.MenuItem>
+                <S.MenuItem>Login</S.MenuItem>
+                <S.MenuItem className="btn">Crie uma conta</S.MenuItem>
             </S.Menu>
         </nav>
-    </S.Header>
+    </L.Header>
 )
 
 export default Header
